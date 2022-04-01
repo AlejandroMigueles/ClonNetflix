@@ -37,7 +37,6 @@ h1 {
     color: #fff;
     display: block;
     font-size: 3.2vw;
-
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     
@@ -98,8 +97,6 @@ main {
     margin-right: 12px;
 }
 
-
-
 .adminperf input[type="submit"] {
     display: block;
     margin: 2em 0 1em 0;
@@ -117,13 +114,11 @@ main {
     border: 2px solid white;
 }
 
-
 @media screen and (max-width: 800px){
 .adminperf input[type="submit"] {
     font-size: 13px;
     }
 }
-
 
 a {
     text-decoration: none;

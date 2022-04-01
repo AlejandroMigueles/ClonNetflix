@@ -6,7 +6,6 @@ body {
     direction: ltr;
 }
 
-
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
@@ -196,16 +195,6 @@ body {
 .letras a{
     color: #171596;
 }
-
-
-
-
-
-
-
-
-
-
 
 footer {
     background-color: #000000B4;

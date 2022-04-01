@@ -5,11 +5,16 @@ body {
 }
 
 header {
-    padding: 0 px;
-    
+    width: 100%; 
+	left: 0; 
+	top: 0;
+	position: fixed;
+    z-index: 149;
 }
 
 .arriba {
+    
+    padding: 0  52px;
     position: sticky;
     top: 0;
     background-color: #141414;
@@ -75,12 +80,6 @@ header {
     padding-top: 20px;
 }
 
-
-
-
-
-
-
 .principal {
     color:#fff;
     position: relative;
@@ -90,10 +89,10 @@ header {
 }
 
 .principal video{
-    height: 100%;
+    height: auto;
     width: 100%;
-    object-fit: cover; /* video centrado y con ancho de pantalla */
-    opacity: 0.9;
+    object-fit: contain; /* video centrado y con ancho de pantalla */
+    opacity: 1;
 }
 
 .principal_info{
@@ -116,17 +115,19 @@ header {
     align-items: center;
 }
 
+.info_text h2{
+    color: #fff;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    font-size: 1.4vw;
+    margin-top: 0.1vw;
+}
+
 .principal_info_type h2 {
     margin-left: 16px;
 }
 
-
-.info_text h1 {
-    font-size: 100px;
-    width: 40vw;
-    line-height: 90px;
-    height: auto;
-}
 
 .info_actions {
     display: flex;
@@ -159,35 +160,30 @@ header {
     color:#fff
 }
 
-
 .info_actions button:hover{
     opacity: 0.5;
 }
 
-
-
 .categorias {
     position: relative;
-    margin-top: -20vh;
+    margin-top: -30vh;
     background: linear-gradient(to bottom, transparent 3vh, #141414 20vh);
     display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .categorias_seccion_carrusel {
     display: flex;
+    max-width: 1240px;
+    max-height: 140px;
+    margin-bottom: 150px;
 }
 
-
-
-
-
-
-
-
-
+.categorias_seccion_carrusel_portadas {
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+    justify-content: space-between;
+}
 
 footer .final{
     max-width: 980px;
@@ -199,7 +195,6 @@ footer .final{
     display: flex;
     flex-wrap: wrap;
     padding-left: 0px;
-
 }
 
 .final .icons .footer-list li a{
@@ -236,7 +231,6 @@ footer .final p a {
     text-decoration: underline;
 }
 
-
 footer input[type="button"] {
     padding: 6.5px;
     background-color: transparent;
@@ -253,4 +247,33 @@ footer .final p{
     color: grey;
     font-size: 11px;
     text-decoration: none;
+}
+
+img:hover{
+    color: white;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .info_text h1 {
+    font-size: 48px;
+    width: 90vw;
+    }    
+}
+
+@media (max-width: 600px) {
+    .info_actions{
+    flex-direction: column;
+    width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .info_actions button {
+    margin-left: 0px;
+    margin-top: 8px;
+    }    
 }
