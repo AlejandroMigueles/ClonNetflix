@@ -18,8 +18,6 @@ body {
     }
 }
 
-
-
 .logo {
     width: 167px;
     height: 45px;
@@ -62,7 +60,6 @@ body {
     border:none;
 }
 
-
 @media only screen and (max-width: 740px){
     .login {
     background: transparent;
@@ -72,8 +69,6 @@ body {
     border-bottom: 1px solid #fff;
     }
     }
-
-
 
 .login h2{
     color: #fff;
@@ -133,7 +128,6 @@ body {
     display: flex;
 }
 
-
 .ayuda{
     color:rgb(119, 116, 116);
     margin: 0;
@@ -142,13 +136,13 @@ body {
     font-size: 13px;
     justify-content: space-between;
 }
+
 .ayuda input{
     display: flex;
     align-items: center;
     width: 20px;
     height: 20px;
 }
-
 
 .ayuda label{
     margin-left: 5px;
@@ -160,13 +154,13 @@ body {
     margin-top: 20px;
     text-decoration: none;
 }
+
 .face {
     color: rgb(119, 116, 116);
     text-decoration: none;
     font-size: 13px;
     
 }
-
 
 .need a {
     color: rgb(119, 116, 116);
@@ -190,7 +184,6 @@ body {
     color: #8c8c8c;
     padding: 0px 0px 50px 0px;
 }
-
 
 .letras a{
     color: #171596;
